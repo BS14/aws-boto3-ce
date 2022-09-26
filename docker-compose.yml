@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql-python
+    restart: always
+    environment:
+      MYSQL_USER: 'boto3ce'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_DATABASE: 'password'
+      MYSQL_ROOT_PASSWORD: 'Rootpassword'
+    ports:
+      - 127.0.0.1:3307:3306
+    volumes:
+      - ./db:/var/lib/mysql
