@@ -6,7 +6,7 @@ from mysql.connector import Error
 
 
 
-connection = mysql.connector.connect(host="127.0.0.1", user="ceautomation",database="ceautomation" ,passwd="c27sdfAk99HT6B", port="3307")
+connection = mysql.connector.connect(host="127.0.0.1", user="boto3ce",database="boto3ce" ,passwd="password", port="3307")
 
 db_Info = connection.get_server_info()
 #print("Connected to MySql Server Version", db_Info)
